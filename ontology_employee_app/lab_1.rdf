@@ -1,0 +1,1180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4/"
+     xml:base="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4/"
+     xmlns:bs="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#bs:"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Блокируется_задачей -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Блокируется_задачей">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Включает_наборы -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Включает_наборы">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Выполняет_назначение -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Выполняет_назначение">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Занимает_должность -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Занимает_должность">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Имеет_историю_статуса -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Имеет_историю_статуса">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Назначена_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Назначена_в">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Обладает_уровнем_навыка -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Обладает_уровнем_навыка">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Работает_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Работает_в">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Содержит_задачи -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Содержит_задачи">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Требует_навык -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Требует_навык">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#address">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#budget -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#budget">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#changedAt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#changedAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#employmentType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#employmentType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasEmail">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasExperienceYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasExperienceYears">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hourlyRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#hourlyRate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#isAvailable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#isAvailable">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#isCertified -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#isCertified">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#isPriority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#isPriority">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#phoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#phoneNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#statusName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#statusName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#yearsOfUsage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#yearsOfUsage">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#AI_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#AI_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Alice_AI_Dev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Alice_AI_Dev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Alice_001"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#AI_Developer"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Python_Language"/>
+        <untitled-ontology-4:address>Moscow</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>alice@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Alice Smith</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">55.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79011112233</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Alice_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Alice_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Bob_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Bob_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Charlie_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Charlie_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Dmitry_004 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Dmitry_004">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Elena_005"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Frank_006"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_George_007"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Elena_005 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Elena_005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Frank_006 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Frank_006">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_George_007 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_George_007">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Hanna_008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Hanna_008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Igor_009 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Igor_009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Julia_010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Julia_010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assignement"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Backend_Dev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Backend_Dev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bob_QA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bob_QA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Bob_002"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Middle_QA"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Saint_P_Hub"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Manual_Testing"/>
+        <untitled-ontology-4:address>Saint Petersburg</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Contract</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>bob@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Bob Hudson</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79022223344</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Firewall_Fix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Firewall_Fix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Igor_09"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Igor_009"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Login_Crash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Login_Crash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Bob_02"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Bob_002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Charlie_Front -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Charlie_Front">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Charlie_003"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Frontend_Dev"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#React_JS"/>
+        <untitled-ontology-4:address>Kazan</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>+79033334455</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasEmail>charlie@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Charlie Brown</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Cyber_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Cyber_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Data_Analyst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Data_Analyst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#DevOps_Engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#DevOps_Engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Dmitry_Back -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Dmitry_Back">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Dmitry_004"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Backend_Dev"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Saint_P_Hub"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Node_JS"/>
+        <untitled-ontology-4:address>Novosibirsk</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>dmitry@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Dmitry Volkov</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">65.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79044445566</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Docker_Tool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Docker_Tool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Alice_PyTorch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Alice_PyTorch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Alice_Python -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Alice_Python"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Bob_Manual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Bob_Manual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Charlie_React -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Charlie_React"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Dmitry_Node -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Dmitry_Node"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Elena_Figma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#ES_Elena_Figma"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Elena_UI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Elena_UI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Elena_005"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#UX_UI_Designer"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#UI_Design"/>
+        <untitled-ontology-4:address>Moscow</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Part-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>elena@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Elena Petrova</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79055556677</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_API_Auth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_API_Auth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Dmitry_04"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Dmitry_004"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_FaceRecognition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_FaceRecognition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Alice_01"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Alice_001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_New_Logo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_New_Logo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Elena_05"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Elena_005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_Push_Notifications -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_Push_Notifications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Julia_10"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Julia_010"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_UI_Dashboard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_UI_Dashboard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Charlie_03"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Charlie_003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Frank_DevOps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Frank_DevOps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Frank_006"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#DevOps_Engineer"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Saint_P_Hub"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Docker_Tool"/>
+        <untitled-ontology-4:address>Moscow</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>frank@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Frank Miller</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">60.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79066667788</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Frontend_Dev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Frontend_Dev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#George_Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#George_Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_George_007"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Data_Analyst"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#SQL_Queries"/>
+        <untitled-ontology-4:address>Rostov-on-Don</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Contract</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>george@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>George King</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79077778899</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Hanna_PM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Hanna_PM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Hanna_008"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Manager"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Scrum_Method"/>
+        <untitled-ontology-4:address>Moscow</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>hanna@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Hanna Bloom</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">70.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79088889900</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Alice_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Alice_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>In Progress</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Bob_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Bob_02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Open</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Charlie_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Charlie_03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Testing</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Dmitry_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Dmitry_04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Done</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Elena_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Elena_05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>In Progress</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Frank_06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Frank_06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Done</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_George_07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_George_07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Review</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Hanna_08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Hanna_08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Done</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Igor_09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Igor_09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>Open</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Julia_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Julia_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskStatusHistory"/>
+        <untitled-ontology-4:statusName>In Progress</untitled-ontology-4:statusName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#IOS_Developer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#IOS_Developer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Igor_Sec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Igor_Sec">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Igor_009"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Security_Engineer"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Saint_P_Hub"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Cyber_Security"/>
+        <untitled-ontology-4:address>Saint Petersburg</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>igor@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Igor Sokolov</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79099990011</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Julia_Mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Julia_Mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Employee"/>
+        <untitled-ontology-4:Выполняет_назначение rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Julia_010"/>
+        <untitled-ontology-4:Занимает_должность rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#IOS_Developer"/>
+        <untitled-ontology-4:Работает_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ"/>
+        <untitled-ontology-4:Требует_навык rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Swift_Language"/>
+        <untitled-ontology-4:address>Krasnodar</untitled-ontology-4:address>
+        <untitled-ontology-4:employmentType>Full-time</untitled-ontology-4:employmentType>
+        <untitled-ontology-4:hasEmail>julia@tech.ai</untitled-ontology-4:hasEmail>
+        <untitled-ontology-4:hasExperienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-4:hasExperienceYears>
+        <untitled-ontology-4:hasName>Julia Chen</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hourlyRate rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.0</untitled-ontology-4:hourlyRate>
+        <untitled-ontology-4:isAvailable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isAvailable>
+        <untitled-ontology-4:isCertified rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:isCertified>
+        <untitled-ontology-4:phoneNumber>+79100001122</untitled-ontology-4:phoneNumber>
+        <untitled-ontology-4:yearsOfUsage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-4:yearsOfUsage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Manual_Testing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Manual_Testing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Middle_QA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Middle_QA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Moscow_HQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Node_JS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Node_JS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Infrastructure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Infrastructure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+        <untitled-ontology-4:Включает_наборы rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Infra"/>
+        <untitled-ontology-4:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300000.0</untitled-ontology-4:budget>
+        <untitled-ontology-4:hasDescription>Масштабирование серверов и настройка конвейеров развертывания</untitled-ontology-4:hasDescription>
+        <untitled-ontology-4:hasName>Обновление серверов</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Manager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Manager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Mobile_App -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Mobile_App">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+        <untitled-ontology-4:Включает_наборы rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Mobile"/>
+        <untitled-ontology-4:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400000.0</untitled-ontology-4:budget>
+        <untitled-ontology-4:hasDescription>Разработка мобильного приложения для iOS</untitled-ontology-4:hasDescription>
+        <untitled-ontology-4:hasName>Мобильное приложение</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Security_Audit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Security_Audit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+        <untitled-ontology-4:Включает_наборы rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Security"/>
+        <untitled-ontology-4:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500000.0</untitled-ontology-4:budget>
+        <untitled-ontology-4:hasDescription>Комплексная проверка безопасности серверной инфраструктуры</untitled-ontology-4:hasDescription>
+        <untitled-ontology-4:hasName>Аудит безопасности</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Smart_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Smart_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+        <untitled-ontology-4:Включает_наборы rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_MVP_Phase"/>
+        <untitled-ontology-4:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1500000.0</untitled-ontology-4:budget>
+        <untitled-ontology-4:hasDescription>Разработка платформы управления городскими ресурсами</untitled-ontology-4:hasDescription>
+        <untitled-ontology-4:hasName>Система Умный Город</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Web_Portal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project_Web_Portal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Project"/>
+        <untitled-ontology-4:Включает_наборы rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Web"/>
+        <untitled-ontology-4:budget rdf:datatype="http://www.w3.org/2001/XMLSchema#float">800000.0</untitled-ontology-4:budget>
+        <untitled-ontology-4:hasDescription>Создание корпоративного портала и личного кабинета клиента</untitled-ontology-4:hasDescription>
+        <untitled-ontology-4:hasName>Веб-Портал</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Python_Language -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Python_Language">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#React_JS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#React_JS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Remote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Remote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#SQL_Queries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#SQL_Queries">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Saint_P_Hub -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Saint_P_Hub">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Scrum_Method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Scrum_Method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Security_Engineer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Security_Engineer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Swift_Language -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Swift_Language">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Infra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Infra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_CI_CD_Pipeline"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Data_Report"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Sprint_Planning"/>
+        <untitled-ontology-4:hasName>Подготовка серверной инфраструктуры и сетевых решений</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_MVP_Phase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_MVP_Phase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Firewall_Fix"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Login_Crash"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_API_Auth"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_FaceRecognition"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_New_Logo"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_Push_Notifications"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_UI_Dashboard"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_CI_CD_Pipeline"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Data_Report"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Sprint_Planning"/>
+        <untitled-ontology-4:hasName>MVP Разработка</untitled-ontology-4:hasName>
+        <untitled-ontology-4:isPriority rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:isPriority>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Mobile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Mobile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_FaceRecognition"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_Push_Notifications"/>
+        <untitled-ontology-4:hasName>Разработка модулей мобильного приложения</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Firewall_Fix"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_API_Auth"/>
+        <untitled-ontology-4:hasName>Комплекс мер по обеспечению информационной безопасности</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet_Web">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#TaskSet"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Bug_Login_Crash"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_New_Logo"/>
+        <untitled-ontology-4:Содержит_задачи rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Feature_UI_Dashboard"/>
+        <untitled-ontology-4:hasName>Проектирование и верстка веб-интерфейсов</untitled-ontology-4:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_CI_CD_Pipeline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_CI_CD_Pipeline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Frank_06"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Frank_006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Data_Report -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Data_Report">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_George_07"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_George_007"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Sprint_Planning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task_Sprint_Planning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Task"/>
+        <untitled-ontology-4:Имеет_историю_статуса rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#History_Hanna_08"/>
+        <untitled-ontology-4:Назначена_в rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Assign_Hanna_008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#UI_Design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#UI_Design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Skill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#UX_UI_Designer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#UX_UI_Designer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xe/ontologies/2025/10/untitled-ontology-4#Position"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

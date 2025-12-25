@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>База знаний проектов</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f7fa;
+            --text-color: #2c3e50;
+            --white: #ffffff;
+            --accent-yellow: #f1c40f;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background-color: var(--secondary-color); 
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1 { 
+            color: var(--text-color); 
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: var(--white); 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th { 
+            background-color: var(--primary-color); 
+            color: white; 
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        td { 
+            padding: 12px 15px; 
+            border-bottom: 1px solid #edf2f7; 
+        }
+
+        tr:hover { 
+            background-color: #f9f9fb; 
+        }
+
+        .back-link { 
+            display: inline-block; 
+            margin-top: 25px; 
+            text-decoration: none; 
+            color: var(--primary-color); 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: #2a69b5;
+            transform: translateX(-5px);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            background: #e1f0ff;
+            color: #4a90e2;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+                .nav-form {
+            margin-bottom: 15px;
+        }
+
+        .nav-button {
+            width: 100%;
+            max-width: 300px;
+            padding: 12px 20px;
+            background-color: var(--white);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+        }
+</style>
+</head>
+<body>
+    <h1>Система распределения множества задач сотрудникам</h1>
+    <p>Выберите категорию для просмотра данных из онтологии:</p>
+    
+    <form action="/projects" method="post">
+        <input type="submit" value="Показать все проекты">
+    </form>
+    
+    <form action="/employees" method="post">
+        <input type="submit" value="Список сотрудников">
+    </form>
+
+    <form action="/workload" method="post">
+        <input type="submit" value="Показать загрузку сотрудников">
+    </form>
+</body>
+</html>

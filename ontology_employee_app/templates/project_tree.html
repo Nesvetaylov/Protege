@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дерево задач: {{ project_name }}</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 40px; background-color: #f5f7fa; }
+        .tree-container { background: white; padding: 30px; border-radius: 12px;}
+        h1 { color: #2c3e50; border-bottom: 2px solid #4a90e2; padding-bottom: 10px; }
+        .task-set { font-weight: bold; color: #4a90e2; margin-top: 20px; font-size: 1.2em; }
+        .task-list { list-style-type: none; margin-left: 20px; border-left: 2px solid #e1f0ff; padding-left: 15px; }
+        .task-item { margin: 8px 0; color: #555; position: relative; }
+        .task-item::before { content: "•"; color: #f1c40f; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+        .back-link { display: block; margin-top: 30px; color: #4a90e2; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="tree-container">
+        <h1>Структура проекта: {{ project_name }}</h1>
+        
+        {% for ts, tasks in tree.items() %}
+            <div class="task-set">Набор задач: {{ ts }}</div>
+            <ul class="task-list">
+                {% for task in tasks %}
+                    <li class="task-item">{{ task }}</li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+
+        <a href="/projects" class="back-link">← Вернуться к списку проектов</a>
+    </div>
+</body>
+</html>

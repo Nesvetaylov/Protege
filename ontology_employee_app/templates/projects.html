@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список проектов</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f7fa;
+            --text-color: #2c3e50;
+            --white: #ffffff;
+            --accent-yellow: #f1c40f;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background-color: var(--secondary-color); 
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        h1 { 
+            color: var(--text-color); 
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            background: var(--white); 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th { 
+            background-color: var(--primary-color); 
+            color: white; 
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+        }
+
+        td { 
+            padding: 12px 15px; 
+            border-bottom: 1px solid #edf2f7; 
+        }
+
+        tr:hover { 
+            background-color: #f9f9fb; 
+        }
+
+        .project-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+
+        .project-link:hover {
+            color: #2a69b5;
+            text-decoration: underline;
+        }
+
+        .back-link { 
+            display: inline-block; 
+            margin-top: 25px; 
+            text-decoration: none; 
+            color: var(--primary-color); 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: #2a69b5;
+            transform: translateX(-5px);
+        }
+
+        .budget-cell {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проекты компании</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Название проекта</th>
+                <th>Описание</th>
+                <th>Бюджет (руб.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in projects %}
+            <tr>
+                <td>
+                    <a href="/project_tree/{{ p.id }}" class="project-link">
+                        {{ p.name }} <span>🔍</span>
+                    </a>
+                </td>
+                <td>{{ p.desc }}</td>
+                <td class="budget-cell">{{ p.budget }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/" class="back-link">← Вернуться на главную</a>
+</body>
+</html>
